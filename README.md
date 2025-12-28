@@ -8,7 +8,6 @@
 
 [Terragrunt](https://terragrunt.gruntwork.io/docs)
 [Terraform](https://developer.hashicorp.com/terraform/docs)
-[OpenTofu](https://opentofu.org/docs)
 
 ### Essential Documentation
 

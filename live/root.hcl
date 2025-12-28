@@ -37,10 +37,12 @@ remote_state {
   }
 
   config = {
-    bucket                      = "${local.tenant}-tofu-state"
-    key                         = "${path_relative_to_include()}/tofu.tfstate"
-    region                      = "${local.region}"
-    endpoint                    = "https://obs.${local.region}.myhuaweicloud.com"
+    bucket = "${local.tenant}-terraform-state"
+    key    = "${path_relative_to_include()}/terraform.tfstate"
+    region = "${local.region}"
+    endpoints = {
+      s3 = "https://obs.${local.region}.myhuaweicloud.com"
+    }
     encrypt                     = true
     skip_region_validation      = true
     skip_credentials_validation = true

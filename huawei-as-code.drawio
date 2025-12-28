@@ -1,50 +1,67 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3" pages="3">
-  <diagram name="Huawei" id="8VOJ7YCvJDgqpTzK2Ubi">
-    <mxGraphModel dx="818" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="i1V5Ol7elioYq9cCf_Vm-1" value="&lt;div&gt;&lt;div&gt;SoftWare Repository for Container (SWR)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="i1V5Ol7elioYq9cCf_Vm-3" value="&lt;div&gt;&lt;div&gt;Cloud Container Engine (CCE)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="160" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="PJrzdAWVFR0larbuxMZM-1" value="&lt;div&gt;&lt;div&gt;Object Storage Service (OBS)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="280" width="160" height="80" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="j8WqNapXsTMb0hRh1649" name="Kubernetes">
-    <mxGraphModel dx="1186" dy="829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="G4IaN-jBUFaRnANcUCEt-1" value="ArgoCD" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="40" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="G4IaN-jBUFaRnANcUCEt-2" value="Velero" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="160" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="iM-m_p8VAqSqNhuXQwFD-1" value="Kyverno" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="280" width="160" height="80" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="QU_sjbf2wC1-UbRuY6zI" name="GitOps">
-    <mxGraphModel dx="912" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="I0mzYJkT91TRr8GE8g6X-1" value="Helmfile" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="9RWuECqrw-6F7LEeHyzM-1" value="SOPS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="160" width="160" height="80" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e" pages="3">
+    <diagram name="Huawei" id="8VOJ7YCvJDgqpTzK2Ubi">
+        <mxGraphModel dx="885" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="i1V5Ol7elioYq9cCf_Vm-1" value="&lt;div&gt;&lt;div&gt;SoftWare Repository for Container (SWR)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="i1V5Ol7elioYq9cCf_Vm-3" value="&lt;div&gt;&lt;div&gt;Cloud Container Engine (CCE)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="160" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="PJrzdAWVFR0larbuxMZM-1" value="&lt;div&gt;&lt;div&gt;Object Storage Service (OBS)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="280" width="160" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="j8WqNapXsTMb0hRh1649" name="Kubernetes">
+        <mxGraphModel dx="885" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="G4IaN-jBUFaRnANcUCEt-1" value="ArgoCD" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="G4IaN-jBUFaRnANcUCEt-2" value="Velero" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="160" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="iM-m_p8VAqSqNhuXQwFD-1" value="Kyverno" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="280" width="160" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="QU_sjbf2wC1-UbRuY6zI" name="GitOps">
+        <mxGraphModel dx="885" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="I0mzYJkT91TRr8GE8g6X-1" value="Helmfile" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9RWuECqrw-6F7LEeHyzM-1" value="SOPS" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="160" width="160" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="ouMGGxaMtF1PdWstpzjy" name="IaC">
+        <mxGraphModel dx="676" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="jgTZjs4_evcbEMEAfW2I-3" value="" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="jgTZjs4_evcbEMEAfW2I-1" target="jgTZjs4_evcbEMEAfW2I-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="jgTZjs4_evcbEMEAfW2I-1" value="making changes under the live/ folder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="120" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="jgTZjs4_evcbEMEAfW2I-2" value="terragrunt hcl fmt --check" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="120" width="160" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>

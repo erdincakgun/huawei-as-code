@@ -17,3 +17,5 @@ Temporary Items
 .apdisk
 *.icloud
 *drawio.bkp
+**/.terragrunt-cache/*
+terragrunt-debug.tfvars.json
