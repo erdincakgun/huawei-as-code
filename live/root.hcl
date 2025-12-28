@@ -41,7 +41,8 @@ remote_state {
     key    = "${path_relative_to_include()}/terraform.tfstate"
     region = "${local.region}"
     endpoints = {
-      s3 = "https://obs.${local.region}.myhuaweicloud.com"
+      s3  = "https://obs.${local.region}.myhuaweicloud.com"
+      sts = "https://obs.${local.region}.myhuaweicloud.com"
     }
     encrypt                     = true
     skip_region_validation      = true
