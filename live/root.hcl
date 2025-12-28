@@ -42,7 +42,7 @@ remote_state {
     region = "${local.region}"
     endpoints = {
       s3  = "https://obs.${local.region}.myhuaweicloud.com"
-      sts = "https://obs.${local.region}.myhuaweicloud.com"
+      sts = "https://sts.${local.region}.myhuaweicloud.com"
     }
     encrypt                     = true
     skip_region_validation      = true
@@ -50,5 +50,6 @@ remote_state {
     skip_metadata_api_check     = true
     skip_requesting_account_id  = true
     skip_s3_checksum            = true
+    use_path_style              = true
   }
 }
