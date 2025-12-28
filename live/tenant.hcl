@@ -1,3 +1,3 @@
 locals {
-  tenant = "eakgun"
+  tenant = "erdincakgun"
 }
