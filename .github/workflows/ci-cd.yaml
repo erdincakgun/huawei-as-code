@@ -17,21 +17,27 @@ jobs:
       HW_ACCESS_KEY: ${{ secrets.HW_ACCESS_KEY }}
       HW_SECRET_KEY: ${{ secrets.HW_SECRET_KEY }}
     steps:
-      - uses: actions/checkout@v6
-      - uses: hashicorp/setup-terraform@v3
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: "1.14.3"
-      - uses: gruntwork-io/terragrunt-action@v3
+      - name: Setup Terragrunt
+        uses: gruntwork-io/terragrunt-action@v3
         with:
           tg_version: "0.96.1"
           tf_path: terraform
-      - run: |
+      - name: Lint
+        run: |
           cd live/
           terragrunt hcl fmt --check
-      - run: |
+      - name: Plan
+        run: |
           cd live/
           terragrunt run --all --non-interactive plan
-      - if: startsWith(github.event.ref, 'refs/tags/v')
+      - name: Apply
+        if: startsWith(github.event.ref, 'refs/tags/v')
         run: |
           cd live/
           terragrunt run --all --non-interactive apply
