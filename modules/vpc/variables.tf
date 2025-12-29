@@ -14,10 +14,6 @@ variable "vpc_description" {
   type = string
 }
 
-variable "vpc_enhanced_local_route" {
-  type = string
-}
-
 variable "vpc_secondary_cidrs" {
   type = list(string)
 }
