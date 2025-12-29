@@ -1,0 +1,39 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+jobs:
+  terragrunt:
+    runs-on: ubuntu-latest
+    env:
+      AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+      AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+      AWS_ACCESS_KEY_ID: ${{ secrets.HW_ACCESS_KEY }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.HW_SECRET_KEY }}
+      HW_DOMAIN_NAME: ${{ secrets.HW_DOMAIN_NAME }}
+      HW_ACCESS_KEY: ${{ secrets.HW_ACCESS_KEY }}
+      HW_SECRET_KEY: ${{ secrets.HW_SECRET_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.14.3"
+      - name: Setup Terragrunt
+        uses: gruntwork-io/terragrunt-action@v3
+        with:
+          tg_version: "0.96.1"
+          tf_path: terraform
+      - name: Lint
+        run: |
+          cd live/
+          terragrunt hcl fmt --check
+      - name: Plan
+        run: |
+          cd live/
+          terragrunt run --all --non-interactive plan
+      - name: Apply
+        if: startsWith(github.event.ref, 'refs/tags/v')
+        run: |
+          cd live/
+          terragrunt run --all --non-interactive apply
