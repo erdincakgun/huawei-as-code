@@ -13,6 +13,7 @@ jobs:
       AWS_REQUEST_CHECKSUM_CALCULATION: when_required
       AWS_ACCESS_KEY_ID: ${{ secrets.HW_ACCESS_KEY }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.HW_SECRET_KEY }}
+      HW_DOMAIN_NAME: ${{ secrets.HW_DOMAIN_NAME }}
       HW_ACCESS_KEY: ${{ secrets.HW_ACCESS_KEY }}
       HW_SECRET_KEY: ${{ secrets.HW_SECRET_KEY }}
     steps:
