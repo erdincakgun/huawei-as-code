@@ -11,6 +11,7 @@
 
 ### Essential Documentation
 
+[HuaweiCloud Terraform Provider](https://registry.terraform.io/providers/huaweicloud/huaweicloud/1.82.4/docs)
 [Lock File Handling](https://terragrunt.gruntwork.io/docs/reference/lock-files/)
 [State Backend](https://terragrunt.gruntwork.io/docs/features/state-backend/)
 [Configure Remote State Backend for HuaweiCloud](https://registry.terraform.io/providers/huaweicloud/huaweicloud/1.82.4/docs/guides/remote-state-backend)
