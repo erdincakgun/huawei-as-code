@@ -1,4 +1,4 @@
-name: CI/CD
+name: Destroy
 on:
   workflow_dispatch:
 jobs:
@@ -33,7 +33,6 @@ jobs:
           cd live/
           terragrunt run --all --non-interactive plan
       - name: Apply
-        if: startsWith(github.event.ref, 'refs/tags/v')
         run: |
           cd live/
-          terragrunt run --all --non-interactive apply
+          terragrunt run --all --non-interactive destroy
