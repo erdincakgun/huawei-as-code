@@ -24,14 +24,6 @@ jobs:
         with:
           tg_version: "0.96.1"
           tf_path: terraform
-      - name: Lint
-        run: |
-          cd live/
-          terragrunt hcl fmt --check
-      - name: Plan
-        run: |
-          cd live/
-          terragrunt run --all --non-interactive plan
       - name: Apply
         run: |
           cd live/
