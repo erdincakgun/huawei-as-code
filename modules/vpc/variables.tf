@@ -19,7 +19,7 @@ variable "vpc_enhanced_local_route" {
 }
 
 variable "vpc_secondary_cidrs" {
-  type = string
+  type = list(string)
 }
 
 variable "vpc_tags" {
