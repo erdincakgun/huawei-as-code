@@ -33,6 +33,7 @@ jobs:
           cd live/
           terragrunt hcl fmt --check
       - name: Plan
+        if: github.ref == 'refs/heads/main'
         run: |
           cd live/
           terragrunt run --all --non-interactive plan
