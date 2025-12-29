@@ -25,6 +25,9 @@ jobs:
       - run: |
           cd live/
           terragrunt hcl fmt --check
+      - run: |
+          cd live/
+          terragrunt run --all --non-interactive plan
       - if: startsWith(github.event.ref, 'refs/tags/v')
         run: |
           cd live/
