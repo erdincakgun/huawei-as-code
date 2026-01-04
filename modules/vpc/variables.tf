@@ -4,4 +4,4 @@ variable "vpc_region" {}
 
 variable "vpc_cidr" {}
 
-variable "tags" {}
+variable "vpc_tags" {}

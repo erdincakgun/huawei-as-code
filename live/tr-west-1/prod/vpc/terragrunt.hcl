@@ -8,11 +8,11 @@ terraform {
 }
 
 inputs = {
-  name   = "${include.root.locals.name}"
-  region = "${include.root.locals.region}"
-  cidr   = "10.0.0.0/16"
+  vpc_name   = "${include.root.locals.name}"
+  vpc_region = "${include.root.locals.region}"
+  vpc_cidr   = "10.0.0.0/16"
 
-  tags = {
+  vpc_tags = {
     Name        = "${include.root.locals.name}"
     Tenant      = "${include.root.locals.tenant}"
     Region      = "${include.root.locals.region}"
