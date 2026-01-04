@@ -4,4 +4,6 @@ variable "vpc_region" {}
 
 variable "vpc_cidr" {}
 
-variable "vpc_tags" {}
+variable "vpc_tags" {
+  type = map()
+}
