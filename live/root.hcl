@@ -2,7 +2,7 @@ locals {
   tenant = read_terragrunt_config(find_in_parent_folders("tenant.hcl")).locals.tenant
   region = read_terragrunt_config(find_in_parent_folders("region.hcl")).locals.region
   env    = read_terragrunt_config(find_in_parent_folders("env.hcl")).locals.env
-  prefix   = "${local.tenant}-${local.region}-${local.env}-${basename(get_terragrunt_dir())}"
+  prefix = "${local.tenant}-${local.region}-${local.env}-${basename(get_terragrunt_dir())}"
   tags = {
     Name        = "${local.name}"
     Tenant      = "${local.tenant}"

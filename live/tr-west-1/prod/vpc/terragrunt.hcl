@@ -4,7 +4,7 @@ include "root" {
 }
 
 terraform {
-  source = "../../../../modules/network"
+  source = "../../../../modules/vpc"
 }
 
 inputs = {
